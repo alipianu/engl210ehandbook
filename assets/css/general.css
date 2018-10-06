@@ -1,0 +1,55 @@
+/* Carousel */
+#splash-carousel > div {
+    max-height: 75vh;
+    overflow: hidden;
+}
+
+#splash-carousel {
+    border: 1px solid #756566;
+    margin-top: 50px;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+body {
+    background-image: url("./../img/other_bg.jpg");
+    background-repeat: repeat;
+}
+
+h1 {
+    color: #756566;
+    font-size: 50px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Orange Draft Logo */
+
+.logo-img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.logo-text-light > p, .logo-text-dark > p {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Audiowide', cursive;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.logo-text-light > p {
+    color: white;
+}
+
+.logo-text-dark > p {
+    color: #756566;
+}
+
+.logo-text-light > p::first-letter, .logo-text-dark > p::first-letter {
+    color: orange;
+    font-size: 15px;
+}
