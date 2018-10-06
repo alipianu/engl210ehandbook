@@ -1,0 +1,100 @@
+.grid-container {
+    word-wrap: break-word;
+    color: #756566;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.grid-container hr {
+    background-color: #756566;
+    border: 1px solid #756566;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.grid-container hr.double-line:after {
+    position: relative;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    margin: -5px 0 0 0;
+    background-color: #756566;
+}
+
+.grid-container .align-left, .grid-container.align-left {
+    text-align: left;
+    float: left;
+}
+
+.grid-container .align-right, .grid-container.align-right {
+    text-align: right;
+    float: right;
+}
+
+.grid-container .align-center, .grid-container.align-center {
+    text-align: center;
+    float: none;
+}
+
+.grid-container .border-left {
+    border-left: 0.5px solid #756566 !important;
+}
+
+.grid-container .border-right {
+    border-right: 0.5px solid #756566 !important;
+}
+
+.grid-container h1, .grid-container h2, .grid-container h3, .grid-container h4 {
+  font-family: 'Chivo', sans-serif;
+  font-weight: bold;
+}
+
+.grid-container h1 {
+    font-size: 6vw;
+}
+
+/*
+.grid-container h2 {
+}
+.grid-container h3 {
+}
+.grid-container h4 {
+}
+.grid-container h5 {
+}
+*/
+
+.grid-container h6 {
+    font-size: 15px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.grid-container .accent {
+    color: orange;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2vw;
+}
+
+/* tables inside grid container for vertical aligning (top, bottom, or center) */
+
+.grid-container table {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container th.align-bottom {
+    vertical-align: bottom;
+}
+
+.grid-container th.align-top {
+    vertical-align: top;
+}
+
+.grid-container a, .grid-container a:visited {
+    color: #756566;
+}
+
+.grid-container a:hover {
+    color: orange;
+}
