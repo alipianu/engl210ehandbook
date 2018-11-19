@@ -26,6 +26,13 @@ h1 {
     text-transform: uppercase;
 }
 
+hr {
+    background-color: #756566;
+    border: 1px solid #756566;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
 /* Orange Draft Logo */
 
 .logo-img {
