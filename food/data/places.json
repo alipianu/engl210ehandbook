@@ -2,6 +2,7 @@
     "plazas": [
         {
             "Aunties Kitchen": {
+                "infractions": 0,
                 "meals": {
                     "Red Velvet Cheesecake": 7.5,
                     "Classic Cheesecake": 6.99,
@@ -56,12 +57,15 @@
                 }
             },
             "Baba Grill": {
+                "infractions": 0,
                 "meals": {}
             },
             "Bubble Tease": {
+                "infractions": 0,
                 "meals": {}
             },
             "Campus Pizza": {
+                "infractions": 0,
                 "meals": {
                     "Small Sauce and Cheese Pizza": 6.99,
                     "Medium Sauce and Cheese Pizza": 8.99,
@@ -123,6 +127,7 @@
                 }
             },
             "Chen's Restaurant": {
+                "infractions": 0,
                 "meals": {
                     "A1. Vegetable Spring Roll (2 pcs)": 2.55,
                     "A2. Fried Dumpling (10 pcs)": 7.55,
@@ -346,6 +351,7 @@
                 }
             },
             "DAGU Rice Noodle": {
+                "infractions": 0,
                 "meals": {
                     "A1. Signature Rice Noodle Soup with Braised Bone-In Pork": 10.99,
                     "A2. Pickled Cabbage Rice Noodle Soup with Fish Slices": 11.99,
@@ -383,6 +389,7 @@
                 }
             },
             "DoShack": {
+                "infractions": 0,
                 "meals": {
                     "Chicken Tenders": 5,
                     "Mac and Cheese Bites": 7.5,
@@ -422,6 +429,7 @@
                 }
             },
             "East Side Marios": {
+                "infractions": 0,
                 "meals": {
                     "Mario's Chicken Parmigiana (12 oz)": 19.99,
                     "Mario's Chicken Parmigiana (6 oz)": 14.99,
@@ -506,6 +514,7 @@
                 }
             },
             "Harveys": {
+                "infractions": 0,
                 "meals": {
                     "The Big Harv": 8.19,
                     "The Big Harv Combo": 11.89,
@@ -582,6 +591,7 @@
                 }
             },
             "Kabob Hut": {
+                "infractions": 0,
                 "meals": {
                     "Plain Yogurt": 2.98,
                     "Cucumber Yogurt": 3.48,
@@ -622,9 +632,11 @@
                 }
             },
             "Kick-Off Sports Bar": {
+                "infractions": 0,
                 "meals": {}
             },
             "Kismet": {
+                "infractions": 0,
                 "meals": {
                     "Onion Bhaji (5 pcs)": 4.79,
                     "Vegetable Pakora (5 pcs)": 4.79,
@@ -759,6 +771,7 @@
                 }
             },
             "Lazeez Shawarma": {
+                "infractions": 0,
                 "meals": {
                     "Chicken Shawarma Wrap": 6.99,
                     "Lazeez on The Rocks": 6.99,
@@ -816,6 +829,7 @@
                 }
             },
             "Marble Slab Creamery": {
+                "infractions": 0,
                 "meals": {
                     "Ice Cream Cups": 5.99,
                     "Half Litre Ice Cream": 8.99,
@@ -836,9 +850,11 @@
                 }
             },
             "Molly Bloom’s Irish Pub": {
+                "infractions": 0,
                 "meals": {}
             },
             "Mongolian Grill": {
+                "infractions": 0,
                 "meals": {
                     "Create Your Own Stir Fry": 15,
                     "1. French Fries": 5,
@@ -869,12 +885,15 @@
                 }
             },
             "Morals Village Hot Pot": {
+                "infractions": 0,
                 "meals": {}
             },
             "Mr. Panino’s Beijing House": {
+                "infractions": 0,
                 "meals": {}
             },
             "Pita Factory": {
+                "infractions": 0,
                 "meals": {
                     "Garden Salad": 7.95,
                     "Greek Salad with Feta": 7.95,
@@ -964,6 +983,7 @@
                 }
             },
             "Seoul Soul": {
+                "infractions": 0,
                 "meals": {
                     "A1. Mandu": 10.95,
                     "A2. Agedashi Tofu": 10.95,
@@ -1036,6 +1056,7 @@
                 }
             },
             "Shawerma Plus": {
+                "infractions": 0,
                 "meals": {
                     "Hummus with Olive Oil": 6.99,
                     "Pickle Dish": 5.99,
@@ -1079,6 +1100,7 @@
                 }
             },
             "Sogo": {
+                "infractions": 0,
                 "meals": {
                     "Traditional Chinese Crepe": 5.99,
                     "Sogo Crepe": 6.49,
@@ -1124,24 +1146,31 @@
                 }
             },
             "Subway": {
+                "infractions": 0,
                 "meals": {}
             },
             "Sweet Dreams Tea Shop": {
+                "infractions": 0,
                 "meals": {}
             },
             "Taste of Taiwan Home Garden": {
+                "infractions": 0,
                 "meals": {}
             },
             "The Grill Burger Kitchen": {
+                "infractions": 0,
                 "meals": {}
             },
             "Waterloo Star": {
+                "infractions": 0,
                 "meals": {}
             },
             "Williams Fresh Cafe": {
+                "infractions": 0,
                 "meals": {}
             },
             "Yoodlism Noodle House": {
+                "infractions": 0,
                 "meals": {}
             }
         }
