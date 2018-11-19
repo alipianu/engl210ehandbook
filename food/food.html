@@ -22,6 +22,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/general.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/grid-container.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="./food.css">
   <meta name="description" content="SEO description goes here">
   <meta name="keywords" content="SEO keywords go here">
   <meta name="author" content="Alexander Lipianu, Alyssa Livermore, Brian Fong, Johyeon Lee, Marcel Sauve, Mohammed Sidiq, Yiran Li">
@@ -32,20 +33,51 @@
 <body>
   <div class="container">
     <script id="header" src="../header.js" data-title="Food" data-loc="../"></script>
+
+    <p>This is still a work in progress, will look much nicer very soon..</p>
+
     <div id="places">
       <h1>Places</h1>
+      <hr>
+      <p>Sample text here...</p>
+      <div>
+      </div>
     </div>
     <div id="suggestions">
       <h1>Suggestions</h1>
+      <hr>
+      <p>Sample text here...</p>
+      <div>
+        <p>Suggestion generator goes here...</p>
+      </div>
     </div>
   </div>
 </body>
 
 <script>
-  $(document).ready(function() {
-    $.getJSON('data/places.json', function(data) {
-      console.log(data);
-      $('.food').html(data);
+  $(document).ready(function () {
+    $.getJSON('data/places.json', function (data) {
+      let container = $('#places > div');
+      for (let p in data.plazas) {
+        for (let r in data.plazas[p]) {
+          let total = 0;
+          let count = 0;
+          for (let m in data.plazas[p][r].meals) {
+            count += 1;
+            total += data.plazas[p][r].meals[m];
+          }
+          if (count === 0) continue;
+          let avg = (total / count).toFixed(2);
+          container.append(`
+            <div class='place'>
+              <div class='place-name'>${r}</div>
+              <div class='place-price'>${avg}</div>
+              <div class='place-infractions'>${data.plazas[p][r].infractions || 0}</div>
+              <p class='place-description'>${data.plazas[p][r].description || ''}</p>
+              <p class='place-foods'>${data.plazas[p][r].foods || ''}</p>
+            </div>`);
+        }
+      }
     });
   });
 </script>
