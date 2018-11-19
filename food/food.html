@@ -30,13 +30,21 @@
 </head>
 
 <body>
-  <h1>Food page!</h1>
-  <div class="food"></div>
+  <div class="container">
+    <script id="header" src="../header.js" data-title="Food" data-loc="../"></script>
+    <div id="places">
+      <h1>Places</h1>
+    </div>
+    <div id="suggestions">
+      <h1>Suggestions</h1>
+    </div>
+  </div>
 </body>
 
 <script>
   $(document).ready(function() {
     $.getJSON('data/places.json', function(data) {
+      console.log(data);
       $('.food').html(data);
     });
   });
