@@ -72,11 +72,12 @@
       </section>
     </section>
   </div>
-  <script id="footer" src="../footer.js" />
+  <script id="footer" src="../footer.js"></script>
 </body>
 
 <script>
   $(document).ready(function () {
+    console.log('a');
     let json = null;
 
     // on page load
@@ -191,11 +192,11 @@
             }
           }
         }
-        
+
         // suggest random meal
         let randMeal = validMeals[Math.floor(Math.random() * validMeals.length)];
         $('#suggestion').text(`${randMeal.place}: ${randMeal.name} ($${randMeal.price.toFixed(2)})`);
-        $('#suggestion').css({'display': 'block'});
+        $('#suggestion').css({ 'display': 'block' });
 
       } catch (err) {
         alert(err);
