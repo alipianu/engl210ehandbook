@@ -33,97 +33,215 @@
 <body>
     <div class="container">
         <script id="header" src="../header.js" data-title="Navigation" data-loc="../"></script>
+
+        <div class="navigation">
+            / <a href="../index.html">Home</a> / Navigation
+        </div>
+
         <section id="maps">
-            <h1>Maps</h1>
+            <h1>Campus Map</h1>
             <hr class="double-line">
             <p>sdfsdfg sdgfsgsfgsdfgsfd gsdfgsdf gsdfhgsgh ghdf hgh df ghhhh ghdfghdf hdfghd.</p>
-            <form>
-                <div id="main-toggles" class="form-group">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="building-toggle" value="building-map" checked>
-                        <label class="form-check-label" for="building-toggle">Buildings</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="bus-toggle" value="bus-map">
-                        <label class="form-check-label" for="bus-toggle">Buses</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="food-toggle" value="food-map">
-                        <label class="form-check-label" for="food-toggle">Food</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="service-toggle" value="service-map">
-                        <label class="form-check-label" for="service-toggle">Services</label>
-                    </div>
-                </div>
-                <div id="bus-toggles" class="form-group">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-200-toggle" value="bus-200" checked>
-                        <label class="form-check-label" for="bus-200-toggle">200 iXpress</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-13-toggle" value="bus-13">
-                        <label class="form-check-label" for="bus-13-toggle">13</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-9-toggle" value="bus-9">
-                        <label class="form-check-label" for="bus-9-toggle">9</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-7-toggle" value="bus-7">
-                        <label class="form-check-label" for="bus-7-toggle">7</label>
-                    </div>
-                </div>
-            </form>
+            <div class="row">
+                <div class="col-lg-9">
+                    <form>
+                        <div id="main-toggles" class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="main-toggles" id="building-toggle" value="building-map" checked>
+                                <label class="form-check-label" for="building-toggle">Buildings</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="main-toggles" id="bus-toggle" value="bus-map">
+                                <label class="form-check-label" for="bus-toggle">Buses</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="main-toggles" id="food-toggle" value="food-map">
+                                <label class="form-check-label" for="food-toggle">Food</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="main-toggles" id="service-toggle" value="service-map">
+                                <label class="form-check-label" for="service-toggle">Services</label>
+                            </div>
+                        </div>
+                        <div id="bus-toggles" class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bus-toggles" id="bus-200-toggle" value="bus-200" checked>
+                                <label class="form-check-label" for="bus-200-toggle">200 iXpress</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bus-toggles" id="bus-13-toggle" value="bus-13">
+                                <label class="form-check-label" for="bus-13-toggle">13</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bus-toggles" id="bus-9-toggle" value="bus-9">
+                                <label class="form-check-label" for="bus-9-toggle">9</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bus-toggles" id="bus-7-toggle" value="bus-7">
+                                <label class="form-check-label" for="bus-7-toggle">7</label>
+                            </div>
+                        </div>
+                    </form>
 
-            <!-- Maps -->
-            <div class="map building-map">
-                <!-- TODO -->
-                <img src="assets/maps/buildings.png">
-                <div class="legend"></div>
-            </div>
-            <div class="map bus-map">
-                <!-- TODO -->
-                <img class="bus bus-200" src="assets/maps/bus200.png">
-                <img class="bus bus-13" src="assets/maps/bus13.png">
-                <img class="bus bus-9" src="assets/maps/bus9.png">
-                <img class="bus bus-7" src="assets/maps/bus7.png">
-                <div class="legend"></div>
-            </div>
-            <div class="map food-map">
-                <!-- TODO -->
-                <img src="assets/maps/food.png">
-                <div class="legend"></div>
-            </div>
-            <div class="map service-map">
-                <!-- TODO -->
-                <img src="assets/maps/services.png">
-                <div class="legend"></div>
+                    <!-- Maps -->
+                    <div class="map building-map">
+                        <!-- TODO -->
+                        <img src="assets/maps/buildings.png">
+                        <div class="legend">
+                            <h4>Legend:</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="legend-entry"><b>AHS</b> - Applied Health Sciences</div>
+                                    <div class="legend-entry"><b>AL</b> - Arts Lecture Hall</div>
+                                    <div class="legend-entry"><b>B1</b> - Biology 1</div>
+                                    <div class="legend-entry"><b>B2</b> - Biology 2</div>
+                                    <div class="legend-entry"><b>BMH</b> - B.C. Mathews Hall</div>
+                                    <div class="legend-entry"><b>BSC</b> - Bright Starts Co-operative Early Learning Centre</div>
+                                    <div class="legend-entry"><b>C2</b> - Chemistry 2</div>
+                                    <div class="legend-entry"><b>CGR</b> - Conrad Grebel University College</div>
+                                    <div class="legend-entry"><b>CIF</b> - Colombia Icefields</div>
+                                    <div class="legend-entry"><b>CMH</b> - Claudette Millar Hall</div>
+                                    <div class="legend-entry"><b>COM</b> - Commissary</div>
+                                    <div class="legend-entry"><b>CPH</b> - Carl A. Pollock Hall</div>
+                                    <div class="legend-entry"><b>CSB</b> - Central Services Building</div>
+                                    <div class="legend-entry"><b>DC</b> - William G. Davis Computer Research Centre</div>
+                                    <div class="legend-entry"><b>DP</b> - Dana Porter Library</div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="legend-entry"><b>DWE</b> - Douglas Wright Engineering Building</div>
+                                    <div class="legend-entry"><b>E2</b> - Engineering 2</div>
+                                    <div class="legend-entry"><b>E3</b> - Engineering 3</div>
+                                    <div class="legend-entry"><b>E5</b> - Engineering 5</div>
+                                    <div class="legend-entry"><b>E6</b> - Engineering 6</div>
+                                    <div class="legend-entry"><b>E7</b> - Engineering 7</div>
+                                    <div class="legend-entry"><b>EC1</b> - East Campus 1</div>
+                                    <div class="legend-entry"><b>EC2</b> - East Campus 2</div>
+                                    <div class="legend-entry"><b>EC3</b> - East Campus 3</div>
+                                    <div class="legend-entry"><b>EC4</b> - East Campus 4</div>
+                                    <div class="legend-entry"><b>EC5</b> - East Campus 5</div>
+                                    <div class="legend-entry"><b>ECH</b> - East Campus Hall</div>
+                                    <div class="legend-entry"><b>EIT</b> - Centre for Environmental and Information Technology</div>
+                                    <div class="legend-entry"><b>ERC</b> - Energy Research Centre</div>
+                                    <div class="legend-entry"><b>ESC</b> - Earth Sciences & Chemistry</div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="legend-entry"><b>EV1</b> - Environment 1</div>
+                                    <div class="legend-entry"><b>EV2</b> - Environment 2</div>
+                                    <div class="legend-entry"><b>EV3</b> - Environment 3</div>
+                                    <div class="legend-entry"><b>FED</b> - Federation Hall</div>
+                                    <div class="legend-entry"><b>GH</b> - Graduate House </div>
+                                    <div class="legend-entry"><b>GSC</b> - General Services Complex</div>
+                                    <div class="legend-entry"><b>HH</b> - J.G. Hagey Hall</div>
+                                    <div class="legend-entry"><b>LHI</b> - Lyle S. Hallman Institute</div>
+                                    <div class="legend-entry"><b>M3</b> - Mathematics 3</div>
+                                    <div class="legend-entry"><b>MC</b> - Mathematics & Computer Building</div>
+                                    <div class="legend-entry"><b>MHR</b> - Minota Hagey Residence</div>
+                                    <div class="legend-entry"><b>MKV</b> - Mackenzie King Village</div>
+                                    <div class="legend-entry"><b>ML</b> - Modern Languages</div>
+                                    <div class="legend-entry"><b>NH</b> - Ira G. Needles Hall</div>
+                                    <div class="legend-entry"><b>OPT</b> - Optometry</div>
+                                </div>
+                                <div class="col-md">
+                                        <div class="legend-entry"><b>PAC</b> - Physical Activities Complex</div>
+                                        <div class="legend-entry"><b>PAS</b> - Psychology, Anthropology, Sociology</div>
+                                        <div class="legend-entry"><b>PHY</b> - Physics</div>
+                                        <div class="legend-entry"><b>QNC</b> - Mike & Ophelia Lazaridis Quantum-Nano Centre</div>
+                                        <div class="legend-entry"><b>RCH</b> - J.R. Coutts Engineering Lecture Hall</div>
+                                        <div class="legend-entry"><b>REN</b> - Renison University College</div>
+                                        <div class="legend-entry"><b>REV</b> - Ron Eydt Village</div>
+                                        <div class="legend-entry"><b>SCH</b> - South Campus Hall</div>
+                                        <div class="legend-entry"><b>SLC</b> - Student Life Centre</div>
+                                        <div class="legend-entry"><b>STJ</b> - St. Jerome's University</div>
+                                        <div class="legend-entry"><b>STP</b> - St. Paul's University College</div>
+                                        <div class="legend-entry"><b>TC</b> - William M. Tatham Centre</div>
+                                        <div class="legend-entry"><b>TH</b> - Tutors' Houses</div>
+                                        <div class="legend-entry"><b>UC</b> - University Club</div>
+                                        <div class="legend-entry"><b>UWP</b> - University of Waterloo Place</div>
+                                        <div class="legend-entry"><b>V1</b> - Village 1</div>
+                                        <div class="legend-entry"><b>WFF</b> - Warriors Football Field</div>                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map bus-map">
+                        <!-- TODO -->
+                        <img class="bus bus-200" src="assets/maps/bus200.png">
+                        <img class="bus bus-13" src="assets/maps/bus13.png">
+                        <img class="bus bus-9" src="assets/maps/bus9.png">
+                        <img class="bus bus-7" src="assets/maps/bus7.png">
+                        <div class="legend">
+                            <h4>Legend:</h4>
+                            <hr>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/bus-7.png"> - Bus Stop (7)</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/bus-9.png"> - Bus Stop (9)</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/bus-13.png"> - Bus Stop (13)</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/bus-200.png"> - Bus Stop (iXpress 200)</div>
+                        </div>
+                    </div>
+                    <div class="map food-map">
+                        <!-- TODO -->
+                        <img src="assets/maps/food.png">
+                        <div class="legend">
+                            <h4>Legend:</h4>
+                            <hr>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/coffee.png"> - Coffee</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/food.png"> - Food</div>
+                        </div>
+                    </div>
+                    <div class="map service-map">
+                        <!-- TODO -->
+                        <img src="assets/maps/services.png">
+                        <div class="legend">
+                            <h4>Legend:</h4>
+                            <hr>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/health.png"> - Health</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/info.png"> - Turnkey Desk</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/residence.png"> - Housing</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/sport.png"> - Athletics</div>
+                            <div class="legend-entry legend-entry-inline"><img src="assets/icons/coop.png"> - Co-op</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="border" style="width:100%;padding:20px">
+                        <h3>Other Maps:</h3>
+                        <ul>
+                            <li><a href="#">University Shops Plaza</a></li>
+                            <li><a href="#">Campus Court Plaza</a></li>
+                        </ul>
+                        <hr>
+                        <h3>Navigation Instructions:</h3>
+                        <ul>
+                            <li><a href="instructions/timhortons.html">MC to Tim Hortons</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
-    <script id="footer" src="../footer.js" ></script>
+    <script id="footer" src="../footer.js"></script>
 </body>
 
 <script>
     $(document).ready(function () {
-        $(`.map:not(.building-map)`).css({'display': 'none'});
-        $(`.bus:not(.bus-200)`).css({'display': 'none'});
+        $(`.map:not(.building-map)`).css({ 'display': 'none' });
+        $(`.bus:not(.bus-200)`).css({ 'display': 'none' });
 
         // update main maps on toggle
         $('#main-toggles input').change(function () {
-            $('#bus-toggles').css({'display' : (this.value == 'bus-map' ? 'block' : 'none')});
-            (function(x){
-                $(`.map:not(.${x})`).css({'display': 'none'});
-                $(`.map.${x}`).css({'display': 'block'});
+            $('#bus-toggles').css({ 'display': (this.value == 'bus-map' ? 'block' : 'none') });
+            (function (x) {
+                $(`.map:not(.${x})`).css({ 'display': 'none' });
+                $(`.map.${x}`).css({ 'display': 'block' });
             }(this.value));
         });
 
         // update bus maps on toggle
         $('#bus-toggles input').change(function () {
-            (function(x){
-                $(`.bus:not(.${x})`).css({'display': 'none'});
-                $(`.bus.${x}`).css({'display': 'block'});
+            (function (x) {
+                $(`.bus:not(.${x})`).css({ 'display': 'none' });
+                $(`.bus.${x}`).css({ 'display': 'block' });
             }(this.value))
         });
     });
