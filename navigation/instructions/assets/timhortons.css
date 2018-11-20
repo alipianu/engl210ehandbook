@@ -1,0 +1,12 @@
+#img-modal img {
+    width: 100%;
+}
+
+.popupLink {
+    color: orange;
+}
+
+.popupLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
