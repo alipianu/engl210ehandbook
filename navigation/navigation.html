@@ -40,60 +40,65 @@
             <form>
                 <div id="main-toggles" class="form-group">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="building-toggle" value="buildings" checked>
+                        <input class="form-check-input" type="radio" name="main-toggles" id="building-toggle" value="building-map" checked>
                         <label class="form-check-label" for="building-toggle">Buildings</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="bus-toggle" value="buses">
+                        <input class="form-check-input" type="radio" name="main-toggles" id="bus-toggle" value="bus-map">
                         <label class="form-check-label" for="bus-toggle">Buses</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="food-toggle" value="food">
+                        <input class="form-check-input" type="radio" name="main-toggles" id="food-toggle" value="food-map">
                         <label class="form-check-label" for="food-toggle">Food</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="main-toggles" id="service-toggle" value="services">
+                        <input class="form-check-input" type="radio" name="main-toggles" id="service-toggle" value="service-map">
                         <label class="form-check-label" for="service-toggle">Services</label>
                     </div>
                 </div>
                 <div id="bus-toggles" class="form-group">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-200-toggle" value="200" checked>
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-200-toggle" value="bus-200" checked>
                         <label class="form-check-label" for="bus-200-toggle">200 iXpress</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-13-toggle" value="13">
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-13-toggle" value="bus-13">
                         <label class="form-check-label" for="bus-13-toggle">13</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-9-toggle" value="9">
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-9-toggle" value="bus-9">
                         <label class="form-check-label" for="bus-9-toggle">9</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-7-toggle" value="7">
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-7-toggle" value="bus-7">
                         <label class="form-check-label" for="bus-7-toggle">7</label>
                     </div>
                 </div>
             </form>
 
-            <!-- Map container -->
-            <div id="map-container">
+            <!-- Maps -->
+            <div class="map building-map">
+                <!-- TODO -->
                 <img src="assets/maps/buildings.png">
+                <div class="legend"></div>
             </div>
-
-            <p>TODO: add legends here for each map, toggled between by radials</p>
-            <!-- Map Legends -->
-            <div id="building-legend" class="legend">
+            <div class="map bus-map">
                 <!-- TODO -->
+                <img class="bus bus-200" src="assets/maps/bus200.png">
+                <img class="bus bus-13" src="assets/maps/bus13.png">
+                <img class="bus bus-9" src="assets/maps/bus9.png">
+                <img class="bus bus-7" src="assets/maps/bus7.png">
+                <div class="legend"></div>
             </div>
-            <div id="bus-legend" class="legend">
+            <div class="map food-map">
                 <!-- TODO -->
+                <img src="assets/maps/food.png">
+                <div class="legend"></div>
             </div>
-            <div id="food-legend" class="legend">
+            <div class="map service-map">
                 <!-- TODO -->
-            </div>
-            <div id="service-legend" class="legend">
-                <!-- TODO -->
+                <img src="assets/maps/services.png">
+                <div class="legend"></div>
             </div>
         </section>
     </div>
@@ -102,39 +107,24 @@
 
 <script>
     $(document).ready(function () {
-        // map of toggle value to asset location
-        const mapAssets = {
-            "buildings": "assets/maps/buildings.png",
-            "buses": {
-                "200": "assets/maps/bus200.png",
-                "13": "assets/maps/bus13.png",
-                "9": "assets/maps/bus9.png",
-                "7": "assets/maps/bus7.png"
-            },
-            "food": "assets/maps/food.png",
-            "services": "assets/maps/services.png"
-        };
+        $(`.map:not(.building-map)`).css({'display': 'none'});
+        $(`.bus:not(.bus-200)`).css({'display': 'none'});
 
-        // function for updating map
-        const updateMap = (asset) => {
-            $('#map-container').html(`<img src="${asset}">`);
-        };
-
+        // update main maps on toggle
         $('#main-toggles input').change(function () {
-            if (this.value == 'buses') {
-                let bus = $('#bus-toggles input:checked')[0].value;
-                updateMap(mapAssets.buses[bus]);
-                // show buses toggles
-                $('#bus-toggles').css({ 'display': 'block' });
-            } else {
-                updateMap(mapAssets[this.value]);
-                // hide buses toggles
-                $('#bus-toggles').css({ 'display': 'none' });
-            }
+            $('#bus-toggles').css({'display' : (this.value == 'bus-map' ? 'block' : 'none')});
+            (function(x){
+                $(`.map:not(.${x})`).css({'display': 'none'});
+                $(`.map.${x}`).css({'display': 'block'});
+            }(this.value));
         });
 
+        // update bus maps on toggle
         $('#bus-toggles input').change(function () {
-            updateMap(mapAssets.buses[this.value]);
+            (function(x){
+                $(`.bus:not(.${x})`).css({'display': 'none'});
+                $(`.bus.${x}`).css({'display': 'block'});
+            }(this.value))
         });
     });
 </script>
