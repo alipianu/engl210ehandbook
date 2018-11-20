@@ -22,7 +22,7 @@ body {
     background-repeat: repeat;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, li {
     color: #756566;
 }
 
@@ -38,12 +38,20 @@ h2 {
     font-family: 'Chivo', sans-serif;
 }
 
-h3 {
-    font-size: 25px;
+.navigation {
+    text-align: center;
+    color: orange;
 }
 
-p {
+a, a:visited {
     color: #756566;
+}
+
+a:hover {
+    color: orange;
+}
+
+p, li {
     font-size: 18px;
 }
 
@@ -90,4 +98,17 @@ hr.double-line:after {
 .logo-text-light > p::first-letter, .logo-text-dark > p::first-letter {
     color: orange;
     font-size: 15px;
+}
+
+/* Borders */
+.border-left {
+    border-left: 0.5px solid #756566 !important;
+}
+
+.border-right {
+    border-right: 0.5px solid #756566 !important;
+}
+
+.border {
+    border: 0.5px solid #756566 !important;
 }

@@ -2,9 +2,32 @@
     display: none;
 }
 
-img {
+.map > img {
     display: block;
     max-width: 100%;
     margin: auto;
+    border: 0.5px solid #756566;
+    margin-bottom: 40px;
+}
+
+/* Legend */
+
+.legend {
+    margin-bottom: 40px; 
+}
+
+.legend .legend-entry img {
+    width: 30px;
+    display: inline-block;
+}
+
+.legend .legend-entry {
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+
+.legend .legend-entry-inline {
+    display: inline-block;
+    margin-right: 30px;
 }
 

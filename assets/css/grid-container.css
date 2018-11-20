@@ -20,14 +20,6 @@
     float: none;
 }
 
-.grid-container .border-left {
-    border-left: 0.5px solid #756566 !important;
-}
-
-.grid-container .border-right {
-    border-right: 0.5px solid #756566 !important;
-}
-
 .grid-container h1, .grid-container h2, .grid-container h3, .grid-container h4 {
   font-family: 'Chivo', sans-serif;
   font-weight: bold;
@@ -72,12 +64,4 @@
 
 .grid-container th.align-top {
     vertical-align: top;
-}
-
-.grid-container a, .grid-container a:visited {
-    color: #756566;
-}
-
-.grid-container a:hover {
-    color: orange;
 }
