@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/general.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/grid-container.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
-  <link rel="stylesheet" type="text/css" href="./food.css">
+  <link rel="stylesheet" type="text/css" href="assets/food.css">
   <meta name="description" content="SEO description goes here">
   <meta name="keywords" content="SEO keywords go here">
   <meta name="author" content="Alexander Lipianu, Alyssa Livermore, Brian Fong, Johyeon Lee, Marcel Sauve, Mohammed Sidiq, Yiran Li">
@@ -66,18 +66,20 @@
             <select class="form-control" id="infractions-select">
             </select>
           </div>
-          <button type="submit" class="btn btn-primary">Generate Suggestion</button>
+          <button type="button" class="btn btn-primary">Generate Suggestion</button>
         </form>
-        <div id="suggestion">N/A</div>
+        <div id="suggestion" class="alert alert-dark" role="alert"></div>
       </section>
     </section>
   </div>
+  <script id="footer" src="../footer.js" />
 </body>
 
 <script>
   $(document).ready(function () {
     let json = null;
 
+    // on page load
     $.getJSON('data/places.json', function (data) {
       json = data;
 
@@ -158,6 +160,45 @@
       let infractionSelect = $('#infractions-select');
       for (let i = 0; i < infractions.length; ++i) {
         infractionSelect.append(`<option value="${infractions[i]}">${infractions[i]}</option>`);
+      }
+    });
+
+    // handle form onclick
+    $('form button').click(function () {
+      let budgetInput = $('#budget-input').val();
+      let maxInfractions = $('#infractions-select > option:selected')[0].value;
+      try {
+        let budget = parseInt(budgetInput);
+        if (isNaN(budget)) throw "Invalid budget.";
+
+        const validInfractions = place => place.infractions <= maxInfractions;
+        const validMeal = price => price <= budget;
+
+        // populate list of valid meals
+        let validMeals = [];
+        for (let p in json.plazas) {
+          for (let r in json.plazas[p]) {
+            if (json.plazas[p][r].infractions > maxInfractions) continue;
+            for (let m in json.plazas[p][r].meals) {
+              let price = json.plazas[p][r].meals[m];
+              if (price <= budget) {
+                validMeals.push({
+                  "place": r,
+                  "name": m,
+                  "price": price
+                });
+              }
+            }
+          }
+        }
+        
+        // suggest random meal
+        let randMeal = validMeals[Math.floor(Math.random() * validMeals.length)];
+        $('#suggestion').text(`${randMeal.place}: ${randMeal.name} ($${randMeal.price.toFixed(2)})`);
+        $('#suggestion').css({'display': 'block'});
+
+      } catch (err) {
+        alert(err);
       }
     });
   });

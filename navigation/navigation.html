@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Handbook for First-Year UW Mathematics Students">
+    <meta property="og:description" content="--description for sharing of social media goes here--">
+    <meta property="og:url" content="http://uwhandbook.online">
+    <meta property="og:site_name" content="UW Handbook">
+    <meta property="og:image" content="http://uwhandbook.online/assets/img/uw/pic1.jpg">
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Bai+Jamjuree|Chivo" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/general.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/grid-container.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/navigation.css">
+    <meta name="description" content="SEO description goes here">
+    <meta name="keywords" content="SEO keywords go here">
+    <meta name="author" content="Alexander Lipianu, Alyssa Livermore, Brian Fong, Johyeon Lee, Marcel Sauve, Mohammed Sidiq, Yiran Li">
+    <link rel="canonical" href="http://uwhandbook.online">
+    <title>UW Student Handbook</title>
+</head>
+
+<body>
+    <div class="container">
+        <script id="header" src="../header.js" data-title="Navigation" data-loc="../"></script>
+        <section id="maps">
+            <h1>Maps</h1>
+            <hr class="double-line">
+            <p>sdfsdfg sdgfsgsfgsdfgsfd gsdfgsdf gsdfhgsgh ghdf hgh df ghhhh ghdfghdf hdfghd.</p>
+            <form>
+                <div id="main-toggles" class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="main-toggles" id="building-toggle" value="buildings" checked>
+                        <label class="form-check-label" for="building-toggle">Buildings</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="main-toggles" id="bus-toggle" value="buses">
+                        <label class="form-check-label" for="bus-toggle">Buses</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="main-toggles" id="food-toggle" value="food">
+                        <label class="form-check-label" for="food-toggle">Food</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="main-toggles" id="service-toggle" value="services">
+                        <label class="form-check-label" for="service-toggle">Services</label>
+                    </div>
+                </div>
+                <div id="bus-toggles" class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-200-toggle" value="200" checked>
+                        <label class="form-check-label" for="bus-200-toggle">200 iXpress</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-13-toggle" value="13">
+                        <label class="form-check-label" for="bus-13-toggle">13</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-9-toggle" value="9">
+                        <label class="form-check-label" for="bus-9-toggle">9</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="bus-toggles" id="bus-7-toggle" value="7">
+                        <label class="form-check-label" for="bus-7-toggle">7</label>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Map container -->
+            <div id="map-container">
+                <img src="assets/maps/buildings.png">
+            </div>
+
+            <p>TODO: add legends here for each map, toggled between by radials</p>
+            <!-- Map Legends -->
+            <div id="building-legend" class="legend">
+                <!-- TODO -->
+            </div>
+            <div id="bus-legend" class="legend">
+                <!-- TODO -->
+            </div>
+            <div id="food-legend" class="legend">
+                <!-- TODO -->
+            </div>
+            <div id="service-legend" class="legend">
+                <!-- TODO -->
+            </div>
+        </section>
+    </div>
+    <script id="footer" src="../footer.js" />
+</body>
+
+<script>
+    $(document).ready(function () {
+        // map of toggle value to asset location
+        const mapAssets = {
+            "buildings": "assets/maps/buildings.png",
+            "buses": {
+                "200": "assets/maps/bus200.png",
+                "13": "assets/maps/bus13.png",
+                "9": "assets/maps/bus9.png",
+                "7": "assets/maps/bus7.png"
+            },
+            "food": "assets/maps/food.png",
+            "services": "assets/maps/services.png"
+        };
+
+        // function for updating map
+        const updateMap = (asset) => {
+            $('#map-container').html(`<img src="${asset}">`);
+        };
+
+        $('#main-toggles input').change(function () {
+            if (this.value == 'buses') {
+                let bus = $('#bus-toggles input:checked')[0].value;
+                updateMap(mapAssets.buses[bus]);
+                // show buses toggles
+                $('#bus-toggles').css({ 'display': 'block' });
+            } else {
+                updateMap(mapAssets[this.value]);
+                // hide buses toggles
+                $('#bus-toggles').css({ 'display': 'none' });
+            }
+        });
+
+        $('#bus-toggles input').change(function () {
+            updateMap(mapAssets.buses[this.value]);
+        });
+    });
+</script>
+
+</html>

@@ -52,3 +52,8 @@
     background-color: rgba(255, 69, 0, 0.8);
     color: white;
 }
+
+#suggestion {
+    display: none;
+    margin-top: 20px;
+}
