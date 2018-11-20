@@ -10,7 +10,11 @@
 }
 
 section {
-    padding: 50px 0 50px 0;
+    padding: 40px 0 40px 0;
+}
+
+section > section {
+    padding: 20px 0 20px 0;
 }
 
 body {
@@ -18,12 +22,29 @@ body {
     background-repeat: repeat;
 }
 
-h1 {
+h1, h2, h3, h4, p {
     color: #756566;
+}
+
+h1 {
     font-size: 50px;
     font-family: 'Chivo', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Chivo', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    color: #756566;
+    font-size: 18px;
 }
 
 hr {
@@ -31,6 +52,16 @@ hr {
     border: 1px solid #756566;
     border-left-width: 0;
     border-right-width: 0;
+}
+
+hr.double-line:after {
+    position: relative;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    margin: -5px 0 0 0;
+    background-color: #756566;
 }
 
 /* Orange Draft Logo */

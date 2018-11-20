@@ -33,31 +33,71 @@
 <body>
   <div class="container">
     <script id="header" src="../header.js" data-title="Food" data-loc="../"></script>
-
-    <p>This is still a work in progress, will look much nicer very soon..</p>
-
-    <div id="places">
-      <h1>Places</h1>
-      <hr>
-      <p>Sample text here...</p>
-      <div>
-      </div>
-    </div>
-    <div id="suggestions">
-      <h1>Suggestions</h1>
-      <hr>
-      <p>Sample text here...</p>
-      <div>
-        <p>Suggestion generator goes here...</p>
-      </div>
-    </div>
+    <p>IMAGE GOES HERE</p>
+    <section id="food">
+      <h1>Food</h1>
+      <hr class="double-line">
+      <p>This is still a work in progress, will look much nicer very soon..</p>
+      <section id="places">
+        <h2>Places</h2>
+        <hr>
+        <p>Sample text here...</p>
+        <div>
+        </div>
+      </section>
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <hr>
+        <p>Sample text here...</p>
+        <div>
+        </div>
+      </section>
+      <section id="suggestions">
+        <h2>Suggestion Generator</h2>
+        <hr>
+        <p>Sample text here...</p>
+        <form>
+          <div class="form-group">
+            <label for="budget-input">Budget</label>
+            <input type="text" class="form-control" id="budget-input" placeholder="Enter budget">
+          </div>
+          <div class="form-group">
+            <label for="infractions-select">Max Infractions</label>
+            <select class="form-control" id="infractions-select">
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Generate Suggestion</button>
+        </form>
+        <div id="suggestion">N/A</div>
+      </section>
+    </section>
   </div>
 </body>
 
 <script>
   $(document).ready(function () {
+    let json = null;
+
     $.getJSON('data/places.json', function (data) {
-      let container = $('#places > div');
+      json = data;
+
+      let infractions = [];
+      let minAvgPrice = -1;
+      let maxAvgPrice = -1;
+      let placeObjs = [];
+
+      // uses binary insertion for O(logn) time complexity
+      const addToInfractions = function (x, low, high) {
+        let med = Math.ceil((high - low) / 2);
+        if (high === med) {
+          if (x > infractions[med]) infractions.splice(med + 1, 0, x);
+          else if (x < infractions[med]) infractions.splice(med, 0, x);
+          return;
+        }
+        if (x > infractions[med]) addToInfractions(x, med + 1, high);
+        else if (x < infractions[med]) addToInfractions(x, low, med - 1);
+      }
+
       for (let p in data.plazas) {
         for (let r in data.plazas[p]) {
           let total = 0;
@@ -67,16 +107,57 @@
             total += data.plazas[p][r].meals[m];
           }
           if (count === 0) continue;
-          let avg = (total / count).toFixed(2);
-          container.append(`
-            <div class='place'>
-              <div class='place-name'>${r}</div>
-              <div class='place-price'>${avg}</div>
-              <div class='place-infractions'>${data.plazas[p][r].infractions || 0}</div>
-              <p class='place-description'>${data.plazas[p][r].description || ''}</p>
-              <p class='place-foods'>${data.plazas[p][r].foods || ''}</p>
-            </div>`);
+
+          let avgStr = (total / count).toFixed(2);
+          let avg = parseFloat(avgStr);
+
+          // update min average price
+          if (avg < minAvgPrice || minAvgPrice < 0) minAvgPrice = avg;
+          // update max average price
+          if (avg > maxAvgPrice || maxAvgPrice < 0) maxAvgPrice = avg;
+
+          let infractionCount = data.plazas[p][r].infractions || 0;
+
+          placeObjs.push({
+            "name": r,
+            "price": avgStr,
+            "infractions": infractionCount,
+            "description": data.plazas[p][r].description || '',
+            "foods": data.plazas[p][r].foods || ''
+          });
+
+          // add infractions to infraction array
+          if (infractions.length === 0) infractions.push(infractionCount);
+          else addToInfractions(infractionCount, 0, infractions.length - 1);
         }
+      }
+
+      // gets the color class of the element
+      const getColClass = (x, min, max) => {
+        const qtr = (max - min) / 4;
+        if (x < min + qtr) return 'low';
+        else if (x < min + qtr * 2) return 'low-med';
+        else if (x < min + qtr * 3) return 'hi-med';
+        else return 'hi';
+      };
+
+      // populate places section with place data
+      let container = $('#places > div');
+      for (let i = 0; i < placeObjs.length; ++i) {
+        container.append(`
+          <div class='place'>
+            <h3 class='place-name'>${placeObjs[i].name}</h3>
+            <div class='place-price ${getColClass(placeObjs[i].price, minAvgPrice, maxAvgPrice)}'>${placeObjs[i].price}</div>
+            <div class='place-infractions ${getColClass(placeObjs[i].infractions, infractions[0], infractions[infractions.length - 1])}'>${placeObjs[i].infractions}</div>
+            <p class='place-description'>${placeObjs[i].description}</p>
+            <p class='place-foods'>${placeObjs[i].foods}</p>
+          </div>`);
+      }
+
+      // populate infraction options in suggestions section
+      let infractionSelect = $('#infractions-select');
+      for (let i = 0; i < infractions.length; ++i) {
+        infractionSelect.append(`<option value="${infractions[i]}">${infractions[i]}</option>`);
       }
     });
   });
