@@ -53,27 +53,67 @@
       </p>
       <p>Here are some step-by-step instructions for how you can get from MC C&D to Tim Hortons lickety-split:</p>
       <ol>
-        <li>Position yourself beside the S-shaped couches, facing the C&D Lounge in the Mathematics and Computer (MC) building</li>
-        <li>Exit through the double black doors on the right side of the C&D Lounge.</li>
-        <li>Go down 3 half-flights of stairs and exit the MC building on the ground floor.</li>
-        <li>Turn right. There should be bike racks on your right side. Walking toward and pass beneath the overpass ahead.</li>
-        <li>Take the left path at the junction where the construction is.There should be trees on your left and construction
-          fences on your right.</li>
+        <li>Position yourself beside the S-shaped couches, facing the C&D Lounge in the Mathematics and Computer (MC) building.
+          <span class="popupLink" onclick="show(1, 'assets/IMG_1453.jpg')">[View]</span>
+        </li>
+        <li>Exit through the double black doors on the right side of the C&D Lounge.
+          <span class="popupLink" onclick="show(2, 'assets/IMG_1452.jpg')">[View]</span>
+        </li>
+        <li>Go down 3 half-flights of stairs and exit the MC building on the ground floor.
+          <span class="popupLink" onclick="show(3, 'assets/IMG_1451.jpg')">[View]</span>
+        </li>
+        <li>Turn right. There should be bike racks on your right side. Walking toward and pass beneath the overpass ahead.
+          <span class="popupLink" onclick="show(4, 'assets/IMG_1454.jpg')">[View]</span>
+        </li>
+        <li>Take the left path at the junction where the construction is. There should be trees on your left and construction
+          fences on your right.
+          <span class="popupLink" onclick="show(5, 'assets/IMG_1455.jpg')">[View]</span>
+        </li>
         <li>Follow the path past the patio on the right, walking until you reach the sidewalk junction at the street. The Student
-          Life Centre sign should be on your right, just before reaching the street.</li>
-        <li>Turn right at the sidewalk junction, then merge right, walking along the uphill path towards the building.</li>
+          Life Centre sign should be on your right, just before reaching the street.
+          <span class="popupLink" onclick="show(6, 'assets/IMG_1456.jpg')">[View]</span>
+        </li>
+        <li>Turn right at the sidewalk junction, then merge right, walking along the uphill path towards the building.
+          <span class="popupLink" onclick="show(7, 'assets/IMG_1457.jpg')">[View]</span>
+        </li>
         <li>At the top of the path, enter through the two sets of double doors.</li>
-        <li>Upon entering the building, you should see Tim Hortons on your right side.</li>
+        <li>Upon entering the building, you should see Tim Hortons on your right side.
+          <span class="popupLink" onclick="show(8, 'assets/IMG_1458.jpg')">[View]</span>
+        </li>
       </ol>
     </section>
   </div>
+
+  <!-- Modal for step images -->
+  <div id="img-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5> <!-- Rewrite -->
+            <button type="button" class="close" onclick="hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div> <!-- Image Container -->
+        </div>
+      </div>
+    </div>
+
   <script id="footer" src="../../footer.js"></script>
 </body>
 
 <script>
-  $(document).ready(function () {
-    console.log('load');
-  });
+  // displays modal w/ image for corresponding step
+  const show = (stepNumber, resource) => {
+    $('#img-modal .modal-body').html(`<img src="${resource}">`);
+    $('#img-modal .modal-title').text(`Step #${stepNumber}`);
+    $('#img-modal').toggle();
+  };
+
+  // hide modal
+  const hide = () => {
+    $('#img-modal').hide();
+  };
 </script>
 
 </html>
