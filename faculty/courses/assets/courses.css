@@ -1,11 +1,9 @@
 p.description:before {
     content: 'Description: ';
-    font-weight: bold; 
 }
 
 p.offered:before {
     content: 'Offered: ';
-    font-weight: bold; 
 }
 
 p.prereqs:before {
@@ -15,5 +13,13 @@ p.prereqs:before {
 
 p.notes:before {
     content: 'Notes: ';
+}
+
+p.profs:before {
+    content: 'Professors: ';
+}
+
+p.description:before, p.offered:before, p.prereqs:before,
+p.notes:before, p.profs:before {
     font-weight: bold; 
 }
