@@ -8,7 +8,6 @@ p.offered:before {
 
 p.prereqs:before {
     content: 'Prerequisites: ';
-    font-weight: bold; 
 }
 
 p.notes:before {

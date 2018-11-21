@@ -40,15 +40,7 @@ h2 {
 
 .navigation {
     text-align: center;
-    color: orange;
-}
-
-a, a:visited {
     color: #756566;
-}
-
-a:hover {
-    color: orange;
 }
 
 p, li {
@@ -71,6 +63,16 @@ hr.double-line:after {
     margin: -5px 0 0 0;
     background-color: #756566;
 }
+
+/* Links */
+a, a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: orange;
+}
+
 
 /* Orange Draft Logo */
 
