@@ -65,3 +65,12 @@
 .grid-container th.align-top {
     vertical-align: top;
 }
+
+/* Links */
+.grid-container a, .grid-container a:visited {
+    color: #756566;
+}
+
+.grid-container a:hover {
+    color: orange;
+}

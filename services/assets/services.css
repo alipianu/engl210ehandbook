@@ -1,0 +1,25 @@
+p.phone:before {
+    content: 'Phone: ';
+}
+
+p.email:before {
+    content: 'Email: ';
+}
+
+p.location:before {
+    content: 'Location: ';
+}
+
+p.time:before {
+    content: 'Time: ';
+}
+
+p.urgent-help:before {
+    content: 'Urgent Help:';
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p.phone:before, p.email:before, p.location:before, p.time:before, p.urgent-help:before {
+    font-weight: bold; 
+}
