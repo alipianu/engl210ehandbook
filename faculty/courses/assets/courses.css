@@ -1,0 +1,19 @@
+p.description:before {
+    content: 'Description: ';
+    font-weight: bold; 
+}
+
+p.offered:before {
+    content: 'Offered: ';
+    font-weight: bold; 
+}
+
+p.prereqs:before {
+    content: 'Prerequisites: ';
+    font-weight: bold; 
+}
+
+p.notes:before {
+    content: 'Notes: ';
+    font-weight: bold; 
+}

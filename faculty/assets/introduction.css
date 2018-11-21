@@ -1,0 +1,88 @@
+.course-tree {
+    display: block;
+    margin: 20px 0 20px 0;
+    font-size: 0;
+  }
+  
+  .courses > div.branch {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align:top;
+  }
+  
+  .standard:before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 75.6%;
+    height: 4px;
+    background-color: #756566;
+    left: 12.2%;
+  }
+  
+  .advanced:before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 67.3%;
+    height: 4px;
+    background-color: #756566;
+    left: 16.4%;
+  }
+  
+  .courses > div.branch > div {
+    display: block;
+    margin: auto;
+    width: 4px;
+    height: 20px;
+    background-color: #756566;
+  }
+  
+  .courses a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #756566;
+    color: white;
+    padding: 10px;
+    max-width: 100%;
+    margin: auto;
+    font-size: initial;
+  }
+
+  .courses a:visited {
+    color: white;
+  }
+
+  .courses a:hover {
+    background-color: orange;
+  }
+  
+  .courses.standard > div.branch {
+    width: 25%;
+  }
+  
+  .courses.advanced > div.branch {
+    width: 33.33%;
+  }
+
+  /* root */
+.course-tree .root {
+    display: block;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #756566;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  .course-tree .root:after {
+    display: inline-block;
+    position: relative;
+    content: '';
+    background-color: #756566;
+    width: 4px;
+    height: 16px;
+    top: 9px;
+    left: calc(50% - 2px);
+  }
