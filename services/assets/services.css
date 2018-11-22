@@ -23,3 +23,48 @@ p.urgent-help:before {
 p.phone:before, p.email:before, p.location:before, p.time:before, p.urgent-help:before {
     font-weight: bold; 
 }
+
+/* Icon Grid */
+
+.icon-grid {
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.icon-grid a {
+  display: inline-block;
+  background-color: #756566;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  width: calc(33% - 17px);
+  height: 100px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.icon-grid i {
+  font-size: 40px;
+}
+
+.icon-grid table tr:nth-child(1) {
+  vertical-align: middle;
+}
+
+.icon-grid table tr:nth-child(2) {
+  vertical-align: bottom;
+}
+
+.icon-grid table {
+  height: 100%;
+  width: 100%;
+}
+
+/* Splash */
+img.splash {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
