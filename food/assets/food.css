@@ -57,3 +57,11 @@
     display: none;
     margin-top: 20px;
 }
+
+/* Splash */
+img.splash {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
