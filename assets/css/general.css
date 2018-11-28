@@ -114,3 +114,8 @@ a:hover {
 .border {
     border: 0.5px solid #756566 !important;
 }
+
+.border-lr {
+    border-left: 0.5px solid #756566 !important;
+	border-right: 0.5px solid #756566 !important;
+}
