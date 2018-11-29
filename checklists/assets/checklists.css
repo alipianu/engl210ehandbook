@@ -19,3 +19,8 @@ button::after {
 button.collapsed::after {
     content: '\f078';
 }
+
+.question::after {
+    content: '"What Can I Do?"';
+    font-style: italic;
+}
