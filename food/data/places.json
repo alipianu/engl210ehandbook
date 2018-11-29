@@ -2,7 +2,7 @@
     "plazas": [
         {
             "Aunties Kitchen": {
-                "infractions": 17,
+                "infractions": 8,
                 "description": "Authentic and fusion Pakistani food, popular street food and dishes",
                 "foods" : "Wraps, naans, platters, shawarma",
                 "meals": {
@@ -71,7 +71,7 @@
                 "meals": {}
             },
             "Campus Pizza": {
-                "infractions": 23,
+                "infractions": 3,
                 "description": "Pizzaria",
                 "foods" : "Pizza, wings, garlic bread",
                 "meals": {
@@ -135,7 +135,7 @@
                 }
             },
             "Chen's Restaurant": {
-                "infractions": 1,
+                "infractions": 0,
                 "description": "Traditional Chinese food",
                 "foods" : "Soups, noodles, rice, various meats, seafood, stir fry",
                 "meals": {
@@ -361,7 +361,7 @@
                 }
             },
             "DAGU Rice Noodle": {
-                "infractions": 0,
+                "infractions": 12,
                 "description": "Traditional Chinese food",
                 "foods" : "Soups, noodles, rice, seafood, various meats, spring rolls",
                 "meals": {
@@ -443,7 +443,7 @@
                 }
             },
             "East Side Marios": {
-                "infractions": 0,
+                "infractions": 4,
                 "description": "Italian cuisine",
                 "foods" : "Soups, salads, pizza, pasta, sandwiches",
                 "meals": {
@@ -530,7 +530,7 @@
                 }
             },
             "Harveys": {
-                "infractions": 0,
+                "infractions": 1,
                 "description": "Fast food restaurant",
                 "foods" : "Hamburgers, hotdogs, poutine, french fries, onion rings",
                 "meals": {
@@ -609,7 +609,7 @@
                 }
             },
             "Kabob Hut": {
-                "infractions": 0,
+                "infractions": 1,
                 "description": "Authentic Persian style cuisine",
                 "foods" : "Kabobs, wraps, stews and dishes",
                 "meals": {
@@ -658,7 +658,7 @@
                 "meals": {}
             },
             "Kismet": {
-                "infractions": 0,
+                "infractions": 2,
                 "description": "Traditional Bangladesh and Indian cuisine",
                 "foods" : "Naan, biryani, tandoori, rice, various curry dishes",
                 "meals": {
@@ -855,7 +855,7 @@
                 }
             },
             "Marble Slab Creamery": {
-                "infractions": 0,
+                "infractions": 3,
                 "description": "Ice cream parlor",
                 "foods" : "Cakes, cones, gourmet treats",
                 "meals": {
@@ -929,7 +929,7 @@
                 "meals": {}
             },
             "Pita Factory": {
-                "infractions": 0,
+                "infractions": 2,
                 "description": "Mediterranean cuisine",
                 "foods" : "Salads, pitas, platters",
                 "meals": {
@@ -1096,7 +1096,7 @@
                 }
             },
             "Shawerma Plus": {
-                "infractions": 0,
+                "infractions": 4,
                 "description": "Street Mediterranean cuisine",
                 "foods" : "Shawarma, wraps, salads",
                 "meals": {

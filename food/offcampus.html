@@ -115,8 +115,11 @@
 
       // uses binary insertion for O(logn) time complexity
       const addToInfractions = function (x, low, high) {
-        let med = Math.ceil((high - low) / 2);
+        //console.log(`x: ${x}, low: ${low}, high: ${high}`);
+        let med = Math.ceil((high + low) / 2);
         if (high === med) {
+          console.log(`x: ${x}, low: ${low}, high: ${high}`);
+          console.log(infractions);
           if (x > infractions[med]) infractions.splice(med + 1, 0, x);
           else if (x < infractions[med]) infractions.splice(med, 0, x);
           return;
