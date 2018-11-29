@@ -38,6 +38,10 @@ h2 {
     font-family: 'Chivo', sans-serif;
 }
 
+h4 {
+    font-size: 22px;
+}
+
 .navigation {
     text-align: center;
     color: #756566;
@@ -115,7 +119,51 @@ a:hover {
     border: 0.5px solid #756566 !important;
 }
 
+/* Icon Grid */
+
+.icon-grid {
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.icon-grid a {
+  display: inline-block;
+  background-color: #756566;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  height: 100px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.icon-grid.w-3 a {
+    width: calc(33% - 17px);
+}
+
+.icon-grid.w-2 a {
+    width: calc(50% - 17px);
+}
+
+.icon-grid i {
+  font-size: 40px;
+}
+
+.icon-grid table tr:nth-child(1) {
+  vertical-align: middle;
+}
+
+.icon-grid table tr:nth-child(2) {
+  vertical-align: bottom;
+}
+
+.icon-grid table {
+  height: 100%;
+  width: 100%;
+}
+
 .border-lr {
     border-left: 0.5px solid #756566 !important;
-	border-right: 0.5px solid #756566 !important;
+    border-right: 0.5px solid #756566 !important;
 }

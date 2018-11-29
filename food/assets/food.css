@@ -1,59 +1,49 @@
-.place .place-name {
+/* Off-Campus */
+#off-campus .place .place-name {
     display: inline-block;
 }
-
 /* price */
-.place .place-price {
+#off-campus.place .place-price {
     border-radius: 50%;
     border: 1px solid black;
     padding: 5px;
     float: right;
     margin: 0 10px 0 10px;
 }
-
-.place .place-price:before {
+#off-campus .place .place-price:before {
     content: '$';
     display: inline-block;
 }
-
 /* infractions */
-.place .place-infractions {
+#off-campus .place .place-infractions {
     padding: 5px;
     border: 1px solid black;
     margin: 0 10px 0 10px;
     display: inline-block;
 }
-
-.place .place-description {
+#off-campus .place .place-description {
     margin-bottom: 5px;
 }
-
-.place .place-foods {
+#off-campus .place .place-foods {
 
 }
-
-.place {
+#off-campus .place {
     margin: 30px 0 30px 0;
 }
-
-.low {
+#off-campus .low {
     background-color: rgba(173, 255, 47, 0.8);
 }
-
-.low-med {
+#off-campus .low-med {
     background-color: rgba(255, 255, 0, 0.8);
 }
-
-.hi-med {
+#off-campus .hi-med {
     background-color: rgba(255, 165, 0, 0.8);
 }
-
-.hi {
+#off-campus .hi {
     background-color: rgba(255, 69, 0, 0.8);
     color: white;
 }
-
-#suggestion {
+#off-campus #suggestion {
     display: none;
     margin-top: 20px;
 }
@@ -64,4 +54,29 @@ img.splash {
     margin: auto;
     margin-top: 20px;
     width: 100%;
+}
+
+p.location::before {
+    content: 'Location: ';
+}
+
+p.hours::before {
+    content: 'Hours: ';
+}
+
+p.note::before {
+    content: 'Note: ';
+}
+
+p.location::before, p.hours:before, p.note::before {
+    font-weight: bold;
+}
+
+/* On-Campus */
+#on-campus .place {
+    margin-bottom: 60px;
+}
+
+#on-campus .place .branch {
+    margin: 10px 0 30px 20px;
 }
