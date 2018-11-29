@@ -3,7 +3,7 @@
     display: inline-block;
 }
 /* price */
-#off-campus.place .place-price {
+#off-campus .place .place-price {
     border-radius: 50%;
     border: 1px solid black;
     padding: 5px;
@@ -24,8 +24,14 @@
 #off-campus .place .place-description {
     margin-bottom: 5px;
 }
-#off-campus .place .place-foods {
-
+#off-campus .place .place-description::before, #off-campus .place .place-foods::before {
+    font-weight: bold;
+}
+#off-campus .place .place-description::before {
+    content: 'Cuisine: ';
+}
+#off-campus .place .place-foods::before {
+    content: 'Menu Items: '
 }
 #off-campus .place {
     margin: 30px 0 30px 0;
