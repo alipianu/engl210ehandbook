@@ -162,3 +162,8 @@ a:hover {
   height: 100%;
   width: 100%;
 }
+
+.border-lr {
+    border-left: 0.5px solid #756566 !important;
+    border-right: 0.5px solid #756566 !important;
+}
