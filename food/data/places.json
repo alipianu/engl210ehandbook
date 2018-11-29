@@ -2,7 +2,7 @@
     "plazas": [
         {
             "Aunties Kitchen": {
-                "infractions": 0,
+                "infractions": 17,
                 "description": "Authentic and fusion Pakistani food, popular street food and dishes",
                 "foods" : "Wraps, naans, platters, shawarma",
                 "meals": {
@@ -71,7 +71,7 @@
                 "meals": {}
             },
             "Campus Pizza": {
-                "infractions": 2,
+                "infractions": 23,
                 "description": "Pizzaria",
                 "foods" : "Pizza, wings, garlic bread",
                 "meals": {
