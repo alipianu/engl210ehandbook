@@ -1,0 +1,21 @@
+.accordion .card {
+    margin: 10px 0 10px 0;
+}
+
+button {
+    background-color: #756566;
+    color: white;
+    width: 100%;
+    padding: 15px !important;
+    font-size: 22px !important;
+}
+
+button::after {
+    font-family: FontAwesome;
+    content: '\f077';
+    float: right;
+}
+
+button.collapsed::after {
+    content: '\f078';
+}
