@@ -3,8 +3,8 @@
         {
             "Aunties Kitchen": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Authentic and fusion Pakistani food, popular street food and dishes",
+                "foods" : "Wraps, naans, platters, shawarma",
                 "meals": {
                     "Red Velvet Cheesecake": 7.5,
                     "Classic Cheesecake": 6.99,
@@ -72,8 +72,8 @@
             },
             "Campus Pizza": {
                 "infractions": 2,
-                "description": "",
-                "foods" : "",
+                "description": "Pizzaria",
+                "foods" : "Pizza, wings, garlic bread",
                 "meals": {
                     "Small Sauce and Cheese Pizza": 6.99,
                     "Medium Sauce and Cheese Pizza": 8.99,
@@ -136,8 +136,8 @@
             },
             "Chen's Restaurant": {
                 "infractions": 1,
-                "description": "",
-                "foods" : "",
+                "description": "Traditional Chinese food",
+                "foods" : "Soups, noodles, rice, various meats, seafood, stir fry",
                 "meals": {
                     "A1. Vegetable Spring Roll (2 pcs)": 2.55,
                     "A2. Fried Dumpling (10 pcs)": 7.55,
@@ -362,8 +362,8 @@
             },
             "DAGU Rice Noodle": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Traditional Chinese food",
+                "foods" : "Soups, noodles, rice, seafood, various meats, spring rolls",
                 "meals": {
                     "A1. Signature Rice Noodle Soup with Braised Bone-In Pork": 10.99,
                     "A2. Pickled Cabbage Rice Noodle Soup with Fish Slices": 11.99,
@@ -402,8 +402,8 @@
             },
             "DoShack": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Italian cuisine",
+                "foods" : "Pasta, paninis, pizza",
                 "meals": {
                     "Chicken Tenders": 5,
                     "Mac and Cheese Bites": 7.5,
@@ -444,8 +444,8 @@
             },
             "East Side Marios": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Italian cuisine",
+                "foods" : "Soups, salads, pizza, pasta, sandwiches",
                 "meals": {
                     "Mario's Chicken Parmigiana (12 oz)": 19.99,
                     "Mario's Chicken Parmigiana (6 oz)": 14.99,
@@ -531,8 +531,8 @@
             },
             "Harveys": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Fast food restaurant",
+                "foods" : "Hamburgers, hotdogs, poutine, french fries, onion rings",
                 "meals": {
                     "The Big Harv": 8.19,
                     "The Big Harv Combo": 11.89,
@@ -610,8 +610,8 @@
             },
             "Kabob Hut": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Authentic Persian style cuisine",
+                "foods" : "Kabobs, wraps, stews and dishes",
                 "meals": {
                     "Plain Yogurt": 2.98,
                     "Cucumber Yogurt": 3.48,
@@ -659,8 +659,8 @@
             },
             "Kismet": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Traditional Bangladesh and Indian cuisine",
+                "foods" : "Naan, biryani, tandoori, rice, various curry dishes",
                 "meals": {
                     "Onion Bhaji (5 pcs)": 4.79,
                     "Vegetable Pakora (5 pcs)": 4.79,
@@ -796,8 +796,8 @@
             },
             "Lazeez Shawarma": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Middle Eastern cuisine and street food",
+                "foods" : "Wraps, platters, salads, shawarma",
                 "meals": {
                     "Chicken Shawarma Wrap": 6.99,
                     "Lazeez on The Rocks": 6.99,
@@ -856,8 +856,8 @@
             },
             "Marble Slab Creamery": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Ice cream parlor",
+                "foods" : "Cakes, cones, gourmet treats",
                 "meals": {
                     "Ice Cream Cups": 5.99,
                     "Half Litre Ice Cream": 8.99,
@@ -885,8 +885,8 @@
             },
             "Mongolian Grill": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Create your own buffet",
+                "foods" : "Stir fry, soups, salads",
                 "meals": {
                     "Create Your Own Stir Fry": 15,
                     "1. French Fries": 5,
@@ -930,8 +930,8 @@
             },
             "Pita Factory": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Mediterranean cuisine",
+                "foods" : "Salads, pitas, platters",
                 "meals": {
                     "Garden Salad": 7.95,
                     "Greek Salad with Feta": 7.95,
@@ -1022,8 +1022,8 @@
             },
             "Seoul Soul": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Traditional Korean cuisine",
+                "foods" : "Soups, stews, hot pots, rice, noodles, various meats, stir fry",
                 "meals": {
                     "A1. Mandu": 10.95,
                     "A2. Agedashi Tofu": 10.95,
@@ -1097,8 +1097,8 @@
             },
             "Shawerma Plus": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Street Mediterranean cuisine",
+                "foods" : "Shawarma, wraps, salads",
                 "meals": {
                     "Hummus with Olive Oil": 6.99,
                     "Pickle Dish": 5.99,
@@ -1143,8 +1143,8 @@
             },
             "Sogo": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Authentic Chinese cuisine",
+                "foods" : "Soups, noodels, rice, various meats",
                 "meals": {
                     "Traditional Chinese Crepe": 5.99,
                     "Sogo Crepe": 6.49,
@@ -1191,8 +1191,8 @@
             },
             "Subway": {
                 "infractions": 0,
-                "description": "",
-                "foods" : "",
+                "description": "Fast food restaurant",
+                "foods" : "Sandwiches, pizza",
                 "meals": {}
             },
             "Sweet Dreams Tea Shop": {

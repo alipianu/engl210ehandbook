@@ -20,11 +20,11 @@ footer li {
 footer li:first-child {
     border-left: none;
 }
-
+/*
 footer div {
     margin: 10px 0 0 0;
 }
-
+*/
 footer a, footer a:visited {
     color: white;
 }

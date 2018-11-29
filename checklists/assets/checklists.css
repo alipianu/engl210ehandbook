@@ -10,13 +10,13 @@ button {
     font-size: 22px !important;
 }
 
-button::after {
+button:not(.no-icon)::after {
     font-family: FontAwesome;
     content: '\f077';
     float: right;
 }
 
-button.collapsed::after {
+button.collapsed:not(.no-icon)::after {
     content: '\f078';
 }
 
