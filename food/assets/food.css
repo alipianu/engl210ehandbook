@@ -74,7 +74,7 @@ p.location::before, p.hours:before, p.note::before {
 
 /* On-Campus */
 #on-campus .place {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 #on-campus .place .branch {
