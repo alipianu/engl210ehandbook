@@ -26,7 +26,7 @@ $(document).ready(function() {
                     <table>
                         <tr>
                         <th class="align-bottom">
-                            <img class="logo-img" src="${dataLoc == null ? '' : dataLoc}assets/img/note_sm.png" />
+                            <img class="logo-img" src="${dataLoc == null ? '' : dataLoc}assets/img/note-sm.png" />
                             <div class="logo-text-dark">
                             <p>Orange</p>
                             <p>Draft</p>

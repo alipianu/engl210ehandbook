@@ -15,17 +15,3 @@ $(document).ready(function() {
         }
     }());
 });
-
-/*
-<ul>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">Privacy & Terms</a>
-                </li>
-    </ul>
-*/
