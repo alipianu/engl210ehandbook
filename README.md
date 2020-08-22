@@ -2,9 +2,9 @@
 
 
 ## 1. Overview
-***
+
 ### 1.1. About
-This `engl210ehandbook` repository contains the codebase for the entirely static [uwhandbook.online](https://uwhandbook.online) website created as a group project for the *Genres of Technical Communication* course ([ENGL 210E](https://uwaterloo.ca/english/course-descriptions-200-level#e210e)) at the University of Waterloo. This online handbook serves as a guide for freshman and prospective mathematics faculty students about the following topics: the mathematics faculty, first-year math and cs courses, food, navigation, student life, and student services.
+This `engl210ehandbook` repository contains the codebase for the entirely static [uwhandbook.online](https://uwhandbook.online) website created as a group project for the *Genres of Technical Communication* ([ENGL 210E](https://uwaterloo.ca/english/course-descriptions-200-level#e210e)) course at the University of Waterloo. This online handbook serves as a guide for freshman and prospective mathematics faculty students about the following topics: the mathematics faculty, first-year math and cs courses, food, navigation, student life, and student services.
 
 In this assignment, the content, distribution medium, and implementation details of each group's student handbook was up to the group's discretion. Our team chose to implement our handbook as an online website rather than a physical resource since (1) there is no distribution cost involved and (2) the information is much more easily accessible.
 
@@ -12,17 +12,17 @@ In this assignment, the content, distribution medium, and implementation details
 
 ### 1.2. Contents
 1. Overview
-  1. About
-  2. Contents
-  3. File Structure
+   1. About
+   2. Contents
+   3. File Structure
 2. Details
-  1. Site Content
-  2. Implementation Notes
+   1. Site Content
+   2. Implementation Notes
 
 ### 1.3. File Structure
 ```text
 .
-├── assets/*				                  :: Site-wide assets
+├── assets/*                          :: Site-wide assets
 ├── checklists                        :: Checklists directory
 │   ├── assets/*                      :: Checklist page assets
 │   └── success.html                  :: Success checklist page
@@ -72,7 +72,7 @@ In this assignment, the content, distribution medium, and implementation details
 
 
 ## 2. Details
-***
+
 ### 2.1 Site Content
 The content of the UW Handbook is segmented into three main categories (Academic, Students, and Other). The Academic portion of the handbook focuses on information pertaining to the mathematics faculty, first-year mathematics courses, and academic success. Inside, students can find degree checklists, course information, important links, and tips/tricks. The Students portion of the handbook focuses on information pertaining to student life and university-provided student services. Inside, students can find details about popular clubs, the student government, off-campus student hotspots, AccessAbility, Campus Wellness, Turnkey, Student Success Office, CECA, and Student Financial Services. The Other portion of the handbook focuses on information pertaining to food and navigation. Inside, students can find maps of the campus and nearby plazas, step-by-step navigational instructions, an overview of the on-campus food locations, an off-campus menu item suggestion generator, and an overview of nearby off-campus restaurants.
 
